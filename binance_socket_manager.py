@@ -119,7 +119,7 @@ class BinanceWebSocketManager:
     # -----------------------------------------------------
     # Customizable Data Handler
     # -----------------------------------------------------
-    def _handle_data(self, data):
+    def _handle_data(self, data: dict):
         stream = data.get("stream")
         payload = data.get("data")
 
